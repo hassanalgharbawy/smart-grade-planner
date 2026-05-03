@@ -1,3 +1,7 @@
+## Live Demo
+
+https://smart-grade-planner.vercel.app
+
 # Smart Grade Planner
 
 A responsive web application that helps students track course grades, calculate weighted averages, and determine what they need on their final exam to reach a target grade.
