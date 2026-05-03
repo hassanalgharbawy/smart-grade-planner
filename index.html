@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Grade Planner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <h1>Smart Grade Planner</h1>
+      <p>Track your course progress, calculate your current grade, and find out what you need on your final.</p>
+    </section>
+
+    <section class="card">
+      <h2>Add Grade Item</h2>
+
+      <div class="form-grid">
+        <input id="itemName" type="text" placeholder="Item name e.g. Midterm" />
+        <input id="itemGrade" type="number" placeholder="Grade %" />
+        <input id="itemWeight" type="number" placeholder="Weight %" />
+        <button onclick="addItem()">Add</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Grades Added</h2>
+      <div id="gradeList" class="grade-list"></div>
+    </section>
+
+    <section class="card">
+      <h2>Target Calculator</h2>
+
+      <div class="form-grid">
+        <input id="targetGrade" type="number" placeholder="Target course grade %" />
+        <input id="finalWeight" type="number" placeholder="Final exam weight %" />
+        <button onclick="calculateNeeded()">Calculate</button>
+      </div>
+    </section>
+
+    <section class="results">
+      <div class="result-box">
+        <h3>Completed Weight</h3>
+        <p id="completedWeight">0%</p>
+      </div>
+
+      <div class="result-box">
+        <h3>Current Course Points</h3>
+        <p id="currentPoints">0%</p>
+      </div>
+
+      <div class="result-box">
+        <h3>Average on Completed Work</h3>
+        <p id="completedAverage">0%</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Final Exam Result</h2>
+      <p id="finalResult">Add your grades and target to see what you need.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
